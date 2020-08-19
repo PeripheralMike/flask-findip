@@ -1,13 +1,13 @@
 # app.py
 from flask import Flask           # import flask
-app = Flask(__name__)             # create an app instance
-import requests
+import ipgetter2
+from ipgetter2 import ipgetter1 as ipgetter
+myip = ipgetter.myip()
 
-myip = requests.get('https://www.google.com').headers['X-Client-IP']
-
+app = Flask(__name__)
 @app.route("/")                   # at the end point /
 def hello():                      # call method hello
-    return "" + myip       # which returns "hello world"s
+    return "" + myip      # which returns "hello world"s
 
 if __name__ == "__main__":        # on running python app.py
     app.run(debug=True)                     # run the flask app

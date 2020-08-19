@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 flask = "*"
-publicip = "*"
+ipgetter2 = "*"
 
 [requires]
 python_version = "3.8"
