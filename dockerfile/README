@@ -1,0 +1,4 @@
+POC app that allows you to find the external IP address of
+
+
+docker run -dit -p 8080:8080 screamingjoypad/flask-ipfinder
