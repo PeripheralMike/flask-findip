@@ -1,4 +1,11 @@
-POC app that allows you to find the external IP address of
+# Intro
+Application built in Python 3.8.1 and hosted in Flask that allows you to find the servers external IP address without visiting a site like whatsmyipaddress or canhazip
 
+# Running
+use the following command to run the image
 
-docker run -dit -p 8080:8080 screamingjoypad/flask-ipfinder
+`docker run -dit -p 8080:8080 screamingjoypad/flask-ipfinder`
+
+This will run the server automatically on port 8080 on localhost.
+
+For your own system, visit something like 0.0.0.0:8080 or if you're hosting this on another server then visit <serveripaddress>:8080
